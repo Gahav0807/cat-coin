@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main-message {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: aliceblue;
+  
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+  
+    left: 50%;
+    top: 10%;
+    width:80;
+    transform: translateX(-50%);
+    display: flex;
+  
+    white-space: nowrap;
+  
+    margin: 0; 
+  }
+  
+  .main-message h1 {
+    margin: 10px; 
+    
+  }
+  
+  .main-message p {
+    margin: 0; 
+    font-size:16px;
+  }
+
+.list-message{
+    font-family: "Montserrat", sans-serif;
+    font-weight:600;
+    color: aliceblue;
+    font-size: 20px;
+
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    display:flex;
+
+    left: 10%;
+    top: 25%;
+    width:80%;
+    height:auto;
+    white-space: nowrap;
+    margin: 0; 
+}
+
+.list-of-friends {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    top: 30%;
+    height: 50%; 
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 0;
+  }
+  
+  
+
+.list-of-friends > * {
+    flex-shrink: 0;
+    margin: 0 1rem;
+    display: inline-block;
+  }
+  
+  .list-of-friends::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  .list-of-friends::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .list-of-friends::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 0.25rem;
+  }
+  
+  .list-of-friends::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+.copy-button{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+  
+    left: 50%;
+    bottom: 120px;
+    transform: translateX(-50%);
+    display: flex;
+
+    width:80%;
+    height:50px;
+
+    border-radius: 20px;
+    background-color: #04F75F;
+
+    padding:10px;
+    border:none;
+
+    transition: transform 0.1s ease;
+}
+
+.copy-button:active {
+  transform: translate(-50%) scale(0.95);
+}
+
+.load-friends{
+  font-family: "Montserrat", sans-serif;
+  font-weight:600;
+  color: aliceblue;
+  font-size: 20px;
+
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  display:flex;
+
+  left: 10%;
+  top: 45%;
+  width:80%;
+  height:auto;
+  white-space: nowrap;
+  margin: 0; 
+}

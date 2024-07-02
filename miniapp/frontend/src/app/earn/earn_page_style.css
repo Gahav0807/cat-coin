@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html{
+    background-color: rgb(11, 18, 21);
+  }
+
+.message-of-earn {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 13px;
+  color: aliceblue;
+
+  position: absolute;
+  flex-direction: column;
+  align-items: center; 
+    
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  display: flex;
+
+  white-space: nowrap;
+}
+
+.bullhorn-icon{
+  width:60px;
+  height:60px;
+}
+
+.container-of-tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  max-height: 50vh; 
+  overflow-y: auto; 
+  scroll-behavior: smooth; 
+  -webkit-overflow-scrolling: touch; 
+  padding: 1rem 0;
+}
+
+.container-of-tasks > * {
+  flex-shrink: 0;
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+.container-of-tasks::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.container-of-tasks::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.container-of-tasks::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0.25rem;
+}
+
+.container-of-tasks::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+

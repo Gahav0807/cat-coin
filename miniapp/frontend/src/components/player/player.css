@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  background-color: rgb(11, 18, 21);
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height:10%;
+  background-color: #12242C;
+  padding: 10px;
+  border-radius: 100px;
+  margin: 8px 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.number-of-player,
+.player-name,
+.clicks {
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.number-of-player {
+  font-weight: 500;
+  margin-left: 10px;
+  flex: 0 0 auto;
+}
+
+.player-name {
+  font-weight: 600;
+  flex: 1 1 auto;
+  margin-right: 10px;
+  max-width: 50%; /* Ограничиваем максимальную ширину имени */
+}
+
+.clicks {
+  font-weight: 300;
+  flex: 0 0 auto;
+  margin-right: 10px;
+  max-width: 20%; /* Ограничиваем максимальную ширину кликов */
+}
+
+.player-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #253d47;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  flex: 0 0 40px; /* Фиксируем размер аватара */
+
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: aliceblue;
+  font-size: 18px;
+}

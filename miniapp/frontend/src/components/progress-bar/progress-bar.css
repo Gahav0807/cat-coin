@@ -1,0 +1,47 @@
+.progress-bar {
+    position:absolute;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items:center;
+    width: 90%;
+    height: 10px;
+    bottom:100px;
+    margin:3%;
+    background-color: lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+.progress-bar-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(26, 151, 6); 
+}
+
+.limit_clicks{
+  position:absolute;
+  color:white;
+  font-size:24px;
+  bottom:120px;
+  left:10%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color:aliceblue;
+}
+
+.limit_of_clicks{
+  position:absolute;
+  color:white;
+  font-size:24px;
+  bottom:120px;
+  right:10%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color:rgb(117, 118, 119);
+}
+  
