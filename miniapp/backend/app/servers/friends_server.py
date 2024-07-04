@@ -2,7 +2,7 @@ import uvicorn
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from handlers.friends_handlers import FriendsHandler
+from ..handlers.friends_handlers import FriendsHandler
 
 class FriendsServer:
     def __init__(self):

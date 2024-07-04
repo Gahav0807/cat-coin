@@ -63,3 +63,5 @@ def setup_logger(name: str,
     logger.addHandler(file_handler)
 
     return logger
+
+print("Starting logger...")

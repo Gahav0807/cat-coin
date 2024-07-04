@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from handlers.top_handlers import TopHandler
+from ..handlers.top_handlers import TopHandler
 
 class TopServer:
     def __init__(self):

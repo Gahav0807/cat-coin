@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from handlers.clicker_handlers import ClickerHandler
+from ..handlers.clicker_handlers import ClickerHandler
 
 class ClickerServer:
     def __init__(self):

@@ -1,0 +1,19 @@
+2024-07-04 12:43:05,143 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 12:43:05,174 - cat_coin - [1m[91mERROR[0m - start_app.py:35 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 12:43:05,174 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 13:18:12,146 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 13:18:12,162 - cat_coin - [1m[91mERROR[0m - start_app.py:35 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 13:18:12,177 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 13:20:22,356 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 13:20:22,370 - cat_coin - [1m[91mERROR[0m - start_app.py:35 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 13:20:22,370 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 13:27:21,381 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 13:27:21,396 - cat_coin - [1m[91mERROR[0m - start_app.py:35 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 13:27:21,396 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 13:30:06,612 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 13:30:06,628 - cat_coin - [1m[91mERROR[0m - start_app.py:35 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 13:30:06,643 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 13:34:38,454 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 13:34:38,465 - cat_coin - [1m[92mINFO[0m - start_app.py:24 щя будет гадер
+2024-07-04 13:34:38,470 - cat_coin - [1m[91mERROR[0m - start_app.py:39 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 13:34:38,474 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
