@@ -9,10 +9,11 @@ export default function TopBalance() {
   const [players, setPlayers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // При заходе в приложение посылаем запрос для получения топа игроков по балансу
   useEffect(() => {
     const getPlayers = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:9003/getTopBalance`);
+        const response = await fetch(`http://127.0.0.1:9000/getTopBalance`);
         const data = await response.json();
         setPlayers(data);
         setIsLoading(false);
@@ -51,6 +52,7 @@ export default function TopBalance() {
         </div>
       </div>
 
+      {/* С помощью цикла добавляем топ игроков  */}
       {isLoading ? (
         <p className="load-friends">Loading</p>
       ) : (

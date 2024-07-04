@@ -11,10 +11,11 @@ export default function TopDay() {
   const [players, setPlayers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // При заходе в приложение посылаем запрос для получения топа игроков за день
   useEffect(() => {
     const getPlayers = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:9003/getTopDay`);
+        const response = await fetch(`http://127.0.0.1:9000/getTopDay`);
         const data = await response.json();
         setPlayers(data);
         setIsLoading(false);
@@ -55,6 +56,7 @@ export default function TopDay() {
         </div>
       </div>
 
+      {/* С помощью цикла добавляем список друзей  */}
       {isLoading ? (
         <p className="load-friends">Loading</p>
       ) : (

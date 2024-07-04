@@ -5,6 +5,7 @@ import BackBtn from '@/components/back-btn/back-btn';
 import React, { useState, useEffect } from 'react';
 import { Toaster, toast } from "sonner";
 
+// тестовые данные
 const userId = 1573326142;
 
 export default function Friends() {
@@ -13,12 +14,14 @@ export default function Friends() {
   // const [userId, setUserId] = useState();
   const [linkToCopy, setLinkToCopy] = useState(`https://t.me/bot_name?start=`+userId);
 
+  // При заходе в приложение берем данные юзера, посылаем запрос для получения списка людей 
+
   useEffect(() => {
     // setUserId(window.Telegram.WebApp.initDataUnsafe.user.id);
 
     const getFriends = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:9002/getFriends/${userId}`);
+        const response = await fetch(`http://127.0.0.1:9000/getFriends/${userId}`);
         const data = await response.json();
         setFriends(data);
         setIsLoading(false);
@@ -31,6 +34,7 @@ export default function Friends() {
     getFriends();
   }, [userId]);
 
+  // Копируем ссылку в буфер обмена 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(linkToCopy);
     toast.success("Link copied to clipboard!");
@@ -45,6 +49,8 @@ export default function Friends() {
       </div>
 
       <p className="list-message">List of your friends</p>
+
+      {/* С помощью цикла добавляем список друзей  */}
 
       {isLoading ? (
         <p className="load-friends">Loading</p>

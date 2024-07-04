@@ -17,3 +17,130 @@
 2024-07-04 13:34:38,465 - cat_coin - [1m[92mINFO[0m - start_app.py:24 щя будет гадер
 2024-07-04 13:34:38,470 - cat_coin - [1m[91mERROR[0m - start_app.py:39 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
 2024-07-04 13:34:38,474 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 14:09:54,757 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:09:54,773 - cat_coin - [1m[91mERROR[0m - start_app.py:37 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 14:09:54,773 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 14:10:13,464 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:10:13,495 - cat_coin - [1m[91mERROR[0m - start_app.py:37 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 14:10:13,495 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 14:13:26,976 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:13:41,652 - cat_coin - [1m[93mWARNING[0m - start_app.py:35 Сервера остановлены
+2024-07-04 14:14:34,709 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:15:01,393 - cat_coin - [1m[93mWARNING[0m - start_app.py:35 Сервера остановлены
+2024-07-04 14:15:01,394 - cat_coin - [1m[91mERROR[0m - database.py:51 Trying to close a non-open connection
+2024-07-04 14:15:12,484 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:15:28,462 - cat_coin - [1m[93mWARNING[0m - start_app.py:35 Сервера остановлены
+2024-07-04 14:15:28,464 - cat_coin - [1m[91mERROR[0m - database.py:51 Trying to close a non-open connection
+2024-07-04 14:18:05,814 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:18:05,829 - cat_coin - [1m[91mERROR[0m - start_app.py:37 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 14:18:05,829 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 14:19:59,589 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:19:59,608 - cat_coin - [1m[91mERROR[0m - start_app.py:37 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 14:19:59,617 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 14:27:18,155 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:27:18,171 - cat_coin - [1m[91mERROR[0m - start_app.py:37 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 14:27:18,171 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 14:27:49,674 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:27:49,685 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 14:28:11,224 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:28:11,239 - cat_coin - [1m[91mERROR[0m - start_app.py:37 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 14:28:11,255 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 14:29:34,559 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:29:34,574 - cat_coin - [1m[91mERROR[0m - start_app.py:37 Ошибка при старте серверов: asyncio.run() cannot be called from a running event loop
+2024-07-04 14:29:34,591 - cat_coin - [1m[91mERROR[0m - database.py:43 Trying to close a non-open connection
+2024-07-04 14:36:08,215 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 14:36:41,904 - cat_coin - [1m[93mWARNING[0m - start_app.py:35 Сервера остановлены
+2024-07-04 14:36:41,904 - cat_coin - [1m[91mERROR[0m - database.py:51 Trying to close a non-open connection
+2024-07-04 14:36:47,439 - cat_coin - [1m[92mINFO[0m - start_app.py:16 Старт всех серверов...
+2024-07-04 16:25:50,855 - cat_coin - [1m[93mWARNING[0m - start_app.py:36 Сервера остановлены
+2024-07-04 16:25:50,855 - cat_coin - [1m[91mERROR[0m - database.py:51 Trying to close a non-open connection
+2024-07-04 16:55:17,819 - cat_coin - [1m[92mINFO[0m - start_app.py:14 Старт сервера...
+2024-07-04 16:55:28,450 - cat_coin - [1m[92mINFO[0m - top_handlers.py:31 Забираем из бд топ игроков дня, в диапазоне 1000
+2024-07-04 16:55:29,388 - cat_coin - [1m[92mINFO[0m - database.py:34 Connection to DB is created
+2024-07-04 17:03:33,820 - cat_coin - [1m[93mWARNING[0m - start_app.py:17 Сервера остановлены
+2024-07-04 17:03:33,830 - cat_coin - [1m[92mINFO[0m - database.py:49 Connection to DB is closed
+2024-07-04 17:03:38,096 - cat_coin - [1m[92mINFO[0m - start_app.py:14 Старт сервера...
+2024-07-04 17:15:40,126 - cat_coin - [1m[93mWARNING[0m - start_app.py:17 Сервера остановлены
+2024-07-04 17:15:40,127 - cat_coin - [1m[91mERROR[0m - database.py:51 Trying to close a non-open connection
+2024-07-04 17:35:04,161 - cat_coin - [1m[92mINFO[0m - start_app.py:14 Старт сервера...
+2024-07-04 17:35:20,681 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:35:21,535 - cat_coin - [1m[92mINFO[0m - database.py:34 Connection to DB is created
+2024-07-04 17:35:21,548 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:35:21,566 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:35:21,570 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:35:34,882 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:35:34,885 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:35:34,901 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:35:34,904 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:35:44,848 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:35:44,851 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:35:44,865 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:35:44,869 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:35:49,578 - cat_coin - [1m[92mINFO[0m - top_handlers.py:10 Забираем из бд топ игроков по балансу, в диапазоне 1000
+2024-07-04 17:35:49,606 - cat_coin - [1m[92mINFO[0m - top_handlers.py:10 Забираем из бд топ игроков по балансу, в диапазоне 1000
+2024-07-04 17:35:52,012 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:35:52,017 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:35:52,029 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:35:52,033 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:36:09,072 - cat_coin - [1m[92mINFO[0m - friends_handlers.py:8 Получаем список друзей
+2024-07-04 17:36:09,103 - cat_coin - [1m[92mINFO[0m - friends_handlers.py:8 Получаем список друзей
+2024-07-04 17:36:11,886 - cat_coin - [1m[92mINFO[0m - top_handlers.py:10 Забираем из бд топ игроков по балансу, в диапазоне 1000
+2024-07-04 17:36:11,902 - cat_coin - [1m[92mINFO[0m - top_handlers.py:10 Забираем из бд топ игроков по балансу, в диапазоне 1000
+2024-07-04 17:36:14,460 - cat_coin - [1m[92mINFO[0m - top_handlers.py:20 Забираем из бд топ игроков месяца, в диапазоне 1000
+2024-07-04 17:36:14,489 - cat_coin - [1m[92mINFO[0m - top_handlers.py:20 Забираем из бд топ игроков месяца, в диапазоне 1000
+2024-07-04 17:36:17,114 - cat_coin - [1m[92mINFO[0m - top_handlers.py:30 Забираем из бд топ игроков дня, в диапазоне 1000
+2024-07-04 17:36:17,165 - cat_coin - [1m[92mINFO[0m - top_handlers.py:30 Забираем из бд топ игроков дня, в диапазоне 1000
+2024-07-04 17:36:19,445 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:36:19,449 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:36:19,462 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:36:19,466 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:36:52,776 - cat_coin - [1m[92mINFO[0m - friends_handlers.py:8 Получаем список друзей
+2024-07-04 17:36:52,791 - cat_coin - [1m[92mINFO[0m - friends_handlers.py:8 Получаем список друзей
+2024-07-04 17:37:08,927 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:37:08,927 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:37:08,943 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:37:08,943 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:37:15,124 - cat_coin - [1m[92mINFO[0m - top_handlers.py:10 Забираем из бд топ игроков по балансу, в диапазоне 1000
+2024-07-04 17:37:15,140 - cat_coin - [1m[92mINFO[0m - top_handlers.py:10 Забираем из бд топ игроков по балансу, в диапазоне 1000
+2024-07-04 17:38:32,422 - cat_coin - [1m[93mWARNING[0m - start_app.py:17 Сервера остановлены
+2024-07-04 17:38:32,422 - cat_coin - [1m[92mINFO[0m - database.py:41 Connection to DB is closed
+2024-07-04 17:38:42,614 - cat_coin - [1m[92mINFO[0m - start_app.py:14 Старт сервера...
+2024-07-04 17:38:50,578 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:38:51,495 - cat_coin - [1m[92mINFO[0m - database.py:34 Connection to DB is created
+2024-07-04 17:38:51,502 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:38:51,516 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:38:51,520 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:39:02,276 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:39:02,280 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:39:02,294 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:39:02,298 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:39:50,703 - cat_coin - [1m[93mWARNING[0m - start_app.py:17 Сервера остановлены
+2024-07-04 17:39:50,703 - cat_coin - [1m[92mINFO[0m - database.py:41 Connection to DB is closed
+2024-07-04 17:39:54,185 - cat_coin - [1m[92mINFO[0m - start_app.py:14 Старт сервера...
+2024-07-04 17:40:02,850 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:40:03,743 - cat_coin - [1m[92mINFO[0m - database.py:34 Connection to DB is created
+2024-07-04 17:40:03,749 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:40:03,763 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:40:03,767 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:40:07,568 - cat_coin - [1m[93mWARNING[0m - start_app.py:17 Сервера остановлены
+2024-07-04 17:40:07,572 - cat_coin - [1m[92mINFO[0m - database.py:41 Connection to DB is closed
+2024-07-04 17:40:24,650 - cat_coin - [1m[92mINFO[0m - start_app.py:14 Старт сервера...
+2024-07-04 17:40:29,623 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:35 Обновляем инфу пользователя в бд.main
+2024-07-04 17:40:30,625 - cat_coin - [1m[92mINFO[0m - database.py:34 Connection to DB is created
+2024-07-04 17:40:30,668 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:42 Проверяем, есть ли пользователь в бд.clicks_od_day && clicks_of_month
+2024-07-04 17:40:30,676 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:51 Есть. Обновляем данные
+2024-07-04 17:40:32,267 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:40:32,272 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:40:32,287 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:40:32,291 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:40:35,242 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:35 Обновляем инфу пользователя в бд.main
+2024-07-04 17:40:35,269 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:42 Проверяем, есть ли пользователь в бд.clicks_od_day && clicks_of_month
+2024-07-04 17:40:35,272 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:51 Есть. Обновляем данные
+2024-07-04 17:40:36,395 - cat_coin - [1m[92mINFO[0m - friends_handlers.py:8 Получаем список друзей
+2024-07-04 17:40:36,412 - cat_coin - [1m[92mINFO[0m - friends_handlers.py:8 Получаем список друзей
+2024-07-04 17:40:38,164 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:40:38,168 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:40:38,185 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
+2024-07-04 17:40:38,188 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-04 17:40:42,617 - cat_coin - [1m[93mWARNING[0m - start_app.py:17 Сервера остановлены
+2024-07-04 17:40:42,621 - cat_coin - [1m[92mINFO[0m - database.py:41 Connection to DB is closed

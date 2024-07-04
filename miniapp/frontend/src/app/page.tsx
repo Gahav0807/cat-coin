@@ -4,15 +4,18 @@ import './clicker_page_style.css';
 import ProgressBar from '@/components/progress-bar/progress-bar';
 import { Toaster, toast } from "sonner";
 
+// тестовые данные
 const userId = 1573326142;
 const username = 'Vlad';
 
 const Home = () => {
-  const [balance, setBalance] = useState(null); // Изначально баланс равен null
-  const [limitClicks, setLimitClicks] = useState(null); // Изначально лимит равен null
+  const [balance, setBalance] = useState(null); 
+  const [limitClicks, setLimitClicks] = useState(null); 
   const [newClicks, setNewClicks] = useState(0);
   // const [userId, setUserId] = useState();
   // const [username, setUsername] = useState();
+
+  // При заходе в приложение берем данные юзера,посылаем запрос к серверу 
 
   useEffect(() => {
     // setUserId(window.Telegram.WebApp.initDataUnsafe.user.id);
@@ -33,7 +36,8 @@ const Home = () => {
     getInfoFromDB();
   }, []);
 
-  // Только после загрузки данных будет добавлен обработчик на выход из приложения
+  // Устанавливаем обработчик на выход со страницы 
+
   useEffect(() => {
     if (balance !== null && limitClicks !== null) {
       const handleUnload = () => {
@@ -48,6 +52,7 @@ const Home = () => {
     }
   }, [balance, limitClicks]);
 
+  // Функция обновляющая данные юзера 
   const updateInfoInDB = async (newClicks, updatedBalance, updatedLimitClicks) => {
     try {
       const response = await fetch(`http://127.0.0.1:9000/updateInfo/${userId}/${username}/${newClicks}/${updatedBalance}/${updatedLimitClicks}`);
@@ -56,6 +61,7 @@ const Home = () => {
     }
   };
 
+  // Логика кликера
   const handleClick = () => {
     if (limitClicks === null || limitClicks === 0) {
       toast.error("Limit! Come back tomorrow");

@@ -1,4 +1,3 @@
-# from loguru import logger
 from ..core.database import Database
 from ..... import logger
 

@@ -5,11 +5,13 @@ import Task from '@/components/task/task';
 import BackBtn from '@/components/back-btn/back-btn';
 import { useEffect, useState } from "react";
 
+// тестовые данные
 const userId=1573326142;
 
 export default function Earn(){
     // const [userId, setUserId] = useState();
 
+    // С помощью апи телеграма берем данные юзера 
     // useEffect(() => {
     //     setUserId(window.Telegram.WebApp.initDataUnsafe.user.id);
     // }, []);
