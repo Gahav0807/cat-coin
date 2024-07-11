@@ -5,7 +5,7 @@ import ProgressBar from '@/components/progress-bar/progress-bar';
 import { Toaster, toast } from "sonner";
 
 // тестовые данные
-const userId = 1573326142;
+const userId = 1573326152;
 const username = 'Vlad';
 
 const Home = () => {

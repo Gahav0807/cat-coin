@@ -18,7 +18,7 @@ class TaskHandler():
                 logger.info("Пользователь есть. Проверка: сделан ли таск")
     
                 # Проверяем, сделано ли задание
-                is_task_completed = await data.get_data(
+                is_task_completed = await data.get_fetchval(
                     f"SELECT {task_in_db} FROM tasks WHERE user_id = {user_id}"
                 )
     

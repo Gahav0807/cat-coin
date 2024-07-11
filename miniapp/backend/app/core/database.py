@@ -75,3 +75,18 @@ class Database:
     async def get_list(self, query):
         result = await self.get_data(query)
         return [dict(record) for record in result]
+    
+    async def get_fetchval(self, query):
+        try:
+            if not self.pool:
+                await self.create_pool()
+            async with self.pool.acquire() as connection:
+                async with connection.transaction():
+                    result = await connection.fetchval(query)
+                    logger.debug("Executed query: %s", query)
+                    return result
+        except PostgresError as e:
+            logger.error("Error while fetchval list: %s", e)
+        except Exception as e:
+            logger.error("Unexpected error: %s", e)
+            raise e from e

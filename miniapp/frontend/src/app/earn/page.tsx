@@ -6,7 +6,7 @@ import BackBtn from '@/components/back-btn/back-btn';
 import { useEffect, useState } from "react";
 
 // тестовые данные
-const userId=1573326142;
+const userId=1573555554;
 
 export default function Earn(){
     // const [userId, setUserId] = useState();
