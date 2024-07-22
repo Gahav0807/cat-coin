@@ -17,11 +17,11 @@ export default function ClickerPage() {
     const tg_data = window.Telegram.WebApp.initDataUnsafe;
 
     setUserId(tg_data.user.id);
-    setUserName(tg_data.user.usernames);
+    setUserName(tg_data.user.username);
 
     const getInfoFromDB = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:9000/getInfo/${tg_data.user.id}/${tg_data.user.usernames}`);
+        const response = await fetch(`http://127.0.0.1:9000/getInfo/${tg_data.user.id}/${tg_data.user.username}`);
         const data: IUserData = await response.json();
 
         setBalance(data.wallet);
@@ -31,7 +31,6 @@ export default function ClickerPage() {
         toast.error("Error on server side!");
       }
     };
-
     getInfoFromDB();
   }, []);
   
