@@ -12,24 +12,27 @@ export default function FriendsPage() {
   const [linkToCopy, setLinkToCopy] = useState<string>('');
 
   useEffect(() => {
-    const tg_data = window.Telegram.WebApp.initDataUnsafe;
-    const linkToCopy = "https://t.me/bot_name?start=" + tg_data.user.id;
-    setLinkToCopy(linkToCopy);
+    const { user } = window.Telegram.WebApp.initDataUnsafe;
+    if (user && user.id) {
+      setLinkToCopy(`https://t.me/bot_name?start=${user.id}`);
   
-    const getFriends = async () => {
-      try {
-        const response = await fetch("http://127.0.0.1:9000/getFriends/" + tg_data.user.id);
-        const data: IFriendData[] = await response.json();
-        setFriends(data);
-        setIsLoading(false);
-      } catch (error) {
-        console.error(error);
-        toast.error("Error on server side!");
-        setIsLoading(false);
-      }
-    };
-    getFriends();
-  }, []);  
+      const getFriends = async () => {
+        try {
+          const response = await fetch(`http://127.0.0.1:9000/getFriends/${user.id}`);
+          const data: IFriendData[] = await response.json();
+          setFriends(data);
+          setIsLoading(false);
+        } catch (error) {
+          console.error(error);
+          toast.error("Error on server side!");
+          setIsLoading(false);
+        }
+      };
+      getFriends();
+  }else{
+    toast.error("Error on Telegram side!");
+  }
+  }, []);
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(linkToCopy);
@@ -38,6 +41,7 @@ export default function FriendsPage() {
 
   return (
     <div>
+      <Toaster position="top-center" richColors />
       <BackBtn />
       <div className='main-message'>
         <h1>Invite your friends!</h1>
@@ -62,7 +66,6 @@ export default function FriendsPage() {
         </div>
       )}
 
-      <Toaster position="top-center" richColors />
       <button className="copy-button" onClick={handleCopyLink}>Copy your link</button>
     </div>
   );
