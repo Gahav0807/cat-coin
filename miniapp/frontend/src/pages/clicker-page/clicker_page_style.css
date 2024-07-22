@@ -43,8 +43,8 @@ body {
   border: none;
   padding: 0;
   margin: 0;
-  width: 310.74px;
-  height: 300px;
+  /* width: 310.74px;
+  height: 300px; */
   transition: transform 0.1s ease;
   overflow: hidden;
 

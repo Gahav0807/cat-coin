@@ -90,7 +90,12 @@ export default function ClickerPage() {
           <p className='balance'>{balance !== null ? balance : 'Loading...'}</p>
         </div>
         <button className='main-btn' onClick={handleClick}>
-          <img src='./cat_coin.png' alt='Монета' />
+          <img 
+          src='./images/cat_coin.png' 
+          alt='Монета' 
+          height={300}
+          width={310.74}
+          />
         </button>
         <ProgressBar progress={limitClicks !== null ? limitClicks : 0} />
       </div>
