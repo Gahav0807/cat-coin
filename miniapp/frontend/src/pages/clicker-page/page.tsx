@@ -15,6 +15,7 @@ export default function ClickerPage() {
 
   // При входе в приложение получаем данные пользователя 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initDataUnsafe) {
     const tg_data = window.Telegram.WebApp.initDataUnsafe;
 
     setUserId(tg_data.user.id);
@@ -32,7 +33,10 @@ export default function ClickerPage() {
         toast.error("Error on server side!");
       }
     };
+    
     getInfoFromDB();
+  }
+    
   }, []);
   
   // Обработчик на сохранение данных перед выходом со страницы
@@ -87,7 +91,7 @@ export default function ClickerPage() {
           <p className='balance'>{balance !== null ? balance : 'Loading...'}</p>
         </div>
         <button className='main-btn' onClick={handleClick}>
-          <Image src='./cat_coin.png' alt='Монета' />
+          <img src='./cat_coin.png' alt='Монета' />
         </button>
         <ProgressBar progress={limitClicks !== null ? limitClicks : 0} />
       </div>
