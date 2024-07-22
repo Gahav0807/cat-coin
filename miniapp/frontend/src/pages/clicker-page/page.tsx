@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import './clicker_page_style.css';
 import ProgressBar from '@/components/progress-bar/progress-bar';
 import { IUserData } from '@/types/items.interface';
@@ -36,26 +37,25 @@ export default function ClickerPage() {
   
   // Обработчик на сохранение данных перед выходом со страницы
   useEffect(() => {
+
+    const updateInfoInDB = async (newClicks: number, updatedBalance: number, updatedLimitClicks: number) => {
+      try {
+        await fetch(`http://127.0.0.1:9000/updateInfo/${userId}/${userName}/${newClicks}/${updatedBalance}/${updatedLimitClicks}`);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
     if (balance !== null && limitClicks !== null) {
       const handleUnload = () => {
         updateInfoInDB(newClicks, balance, limitClicks);
       };
-
       window.addEventListener('beforeunload', handleUnload);
-
       return () => {
         window.removeEventListener('beforeunload', handleUnload);
       };
     }
-  }, [balance, limitClicks, newClicks]);
-
-  const updateInfoInDB = async (newClicks: number, updatedBalance: number, updatedLimitClicks: number) => {
-    try {
-      await fetch(`http://127.0.0.1:9000/updateInfo/${userId}/${userName}/${newClicks}/${updatedBalance}/${updatedLimitClicks}`);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  }, [userId, userName, balance, limitClicks, newClicks]);
 
   // Логика кликера
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -87,7 +87,7 @@ export default function ClickerPage() {
           <p className='balance'>{balance !== null ? balance : 'Loading...'}</p>
         </div>
         <button className='main-btn' onClick={handleClick}>
-          <img src='./cat_coin.png' alt='Монета' />
+          <Image src='./cat_coin.png' alt='Монета' />
         </button>
         <ProgressBar progress={limitClicks !== null ? limitClicks : 0} />
       </div>

@@ -10,7 +10,7 @@ export interface ITaskData {
   task_name: string;
   task_price: number;
   url_of_btn: string;
-  user_id: number;
+  user_id: number | null;
 }
 
 export interface IFriendData {

@@ -13,11 +13,12 @@ export default function FriendsPage() {
 
   useEffect(() => {
     const tg_data = window.Telegram.WebApp.initDataUnsafe;
-    setLinkToCopy(`https://t.me/bot_name?start=${tg_data.user.id}`);
-
+    const linkToCopy = "https://t.me/bot_name?start=" + tg_data.user.id;
+    setLinkToCopy(linkToCopy);
+  
     const getFriends = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:9000/getFriends/${tg_data.user.id}`);
+        const response = await fetch("http://127.0.0.1:9000/getFriends/" + tg_data.user.id);
         const data: IFriendData[] = await response.json();
         setFriends(data);
         setIsLoading(false);
@@ -28,7 +29,7 @@ export default function FriendsPage() {
       }
     };
     getFriends();
-  }, []);
+  }, []);  
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(linkToCopy);
