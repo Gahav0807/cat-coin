@@ -5,13 +5,18 @@ import Task from '@/components/task/task';
 import BackBtn from '@/components/back-btn/back-btn';
 import { ITaskData } from '@/types/items.interface';
 import { useEffect, useState } from "react";
+import { Toaster, toast } from "sonner";
 
 export default function EarnPage() {
   const [userId, setUserId] = useState<number>();
 
   useEffect(() => {
-    const tg_data = window.Telegram.WebApp.initDataUnsafe;
-    setUserId(tg_data.user.id);
+    const { user } = window.Telegram.WebApp.initDataUnsafe;
+    if (user && user.id) {
+      setUserId(user.id);
+    } else {
+      toast.error("Error on Telegram side!")
+    }
   }, []);
 
   let taskData: ITaskData[] = [
@@ -54,6 +59,7 @@ export default function EarnPage() {
 
   return (
     <div>
+      <Toaster position="top-center" richColors />
       <BackBtn />
       <div className='message-of-earn'>
         <FontAwesomeIcon icon={faBullhorn} className='bullhorn-icon' />

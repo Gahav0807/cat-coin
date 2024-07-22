@@ -14,25 +14,28 @@ export default function ClickerPage() {
 
   // При входе в приложение получаем данные пользователя 
   useEffect(() => {
-    const tg_data = window.Telegram.WebApp.initDataUnsafe;
+    const { user } = window.Telegram.WebApp.initDataUnsafe;
+    if (user && user.id) {
+      setUserId(user.id);
+      setUserName(user.username);
 
-    setUserId(tg_data.user.id);
-    setUserName(tg_data.user.username);
-
-    const getInfoFromDB = async () => {
-      try {
-        const response = await fetch(`http://127.0.0.1:9000/getInfo/${tg_data.user.id}/${tg_data.user.username}`);
-        const data: IUserData = await response.json();
-
-        setBalance(data.wallet);
-        setLimitClicks(data.limit_clicks);
-      } catch (error) {
-        console.error(error);
-        toast.error("Error on server side!");
-      }
-    };
-    getInfoFromDB();
-  }, []);
+      const getInfoFromDB = async () => {
+        try {
+          const response = await fetch(`http://127.0.0.1:9000/getInfo/${user.id}/${user.username}`);
+          const data: IUserData = await response.json();
+  
+          setBalance(data.wallet);
+          setLimitClicks(data.limit_clicks);
+        } catch (error) {
+          console.error(error);
+          toast.error("Error on server side!");
+        }
+      };
+      getInfoFromDB();
+  }else{
+    toast.error("Error on Telegram side!");
+  }
+}, []);
   
   // Обработчик на сохранение данных перед выходом со страницы
   useEffect(() => {
