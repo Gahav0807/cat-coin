@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html> 
-      {/* <head>
+      <head>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
-      </head> */}
+      </head>
       <body > 
       {children}
       <footer className="navigation-panel">   

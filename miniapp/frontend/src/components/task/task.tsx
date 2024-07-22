@@ -1,5 +1,6 @@
 'use client'
 import './task.css';
+import { Toaster, toast } from "sonner";
 
 export default function Task({task_in_db,task_name, task_price, url_of_btn, user_id}){
 
@@ -10,6 +11,7 @@ export default function Task({task_in_db,task_name, task_price, url_of_btn, user
           const data = await response.json();
         } catch (error) {
           console.error(error);
+          toast.error("Error on server side!");
         }
       };
 
