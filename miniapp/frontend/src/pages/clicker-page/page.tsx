@@ -21,7 +21,7 @@ export default function ClickerPage() {
 
     const getInfoFromDB = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:9000/getInfo/${userId}/${userName}`);
+        const response = await fetch(`http://127.0.0.1:9000/getInfo/${tg_data.user.id}/${tg_data.user.usernames}`);
         const data: IUserData = await response.json();
 
         setBalance(data.wallet);
@@ -52,7 +52,7 @@ export default function ClickerPage() {
 
   const updateInfoInDB = async (newClicks: number, updatedBalance: number, updatedLimitClicks: number) => {
     try {
-      await fetch(`http://127.0.0.1:9000/updateInfo/${testUserId}/${testUsername}/${newClicks}/${updatedBalance}/${updatedLimitClicks}`);
+      await fetch(`http://127.0.0.1:9000/updateInfo/${userId}/${userName}/${newClicks}/${updatedBalance}/${updatedLimitClicks}`);
     } catch (error) {
       console.error(error);
     }

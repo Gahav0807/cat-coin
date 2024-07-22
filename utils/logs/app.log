@@ -530,3 +530,5 @@
 2024-07-22 13:50:03,612 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
 2024-07-22 13:50:03,622 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:9 Получаем инфу про пользователя из бд(clicker)
 2024-07-22 13:50:03,625 - cat_coin - [1m[92mINFO[0m - clicker_handlers.py:16 Пользователь уже есть, отправляем данные
+2024-07-22 14:17:05,168 - cat_coin - [1m[93mWARNING[0m - start_app.py:17 Сервера остановлены
+2024-07-22 14:17:05,193 - cat_coin - [1m[92mINFO[0m - database.py:41 Connection to DB is closed
